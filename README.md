@@ -1,3 +1,6 @@
+### This project is an archive of the old version of the Beat Saber Song Injector.
+Get the new version here: https://github.com/xyonico/BeatSaberSongInjector/releases
+
 # BeatSaberSongInjector
 An injector for adding custom songs into Beat Saber.
 
