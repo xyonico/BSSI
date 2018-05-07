@@ -4,24 +4,20 @@ An injector for adding custom songs into Beat Saber.
 *This mod works on both the Steam and Oculus Store versions.*
 
 ## Installation Instructions
- 1. Download the latest release from here: https://github.com/xyonico/BeatSaberSongInjector/releases
- 2. Extract the .zip file into the `Oculus Apps\Software\hyperbolic-magnetism-beat-saber` for Oculus Home OR `steamapps\common\Beat Saber` for Steam. (The one with Beat Saber.exe)
+ 1. Extract the .zip file into the `Oculus Apps\Software\hyperbolic-magnetism-beat-saber` for Oculus Home OR `steamapps\common\Beat Saber` for Steam. (The one with Beat Saber.exe)
   
     The Beat Saber folder should look something like this:
     * `Beat Saber_Data`
+    * `BSSI`
     * `CustomSongs`
-    * `IPA`
-    * `Plugins`
-    * `Beat Saber (Patch & Launch)`
     * `Beat Saber.exe`
-    * `IPA.exe`
-    * `Mono.Cecil.dll`
     * `UnityPlayer.dll`
- 3. Done!
+ 2. Done!
 
 ## Usage
- 1. Launch Beat Saber through the platform you purchased it on.	
- 2. Go to 'Solo' -> 'Standard' and your custom song will be available to play at the bottom of the list.	
+ 1. Launch Beat Saber through the platform you purchased it on.
+ 2. While at the main menu, launch `BSSI/BSSI.exe` and press <kbd>Inject</kbd> (If your game crashes go to troubleshooting)	
+ 3. Go to 'Solo' -> 'Standard' and your custom song will be available to play at the bottom of the list.	
 
 
 ## Installing Custom Songs
@@ -79,17 +75,12 @@ All possible environmentNames:
 -NiceEnvironment
 
 "difficultyLevels": [
-	{
-		"difficulty": This can only be set to Easy, Normal, Hard, Expert or ExpertPlus,
-		"difficultyRank": Currently unused whole number for ranking difficulty,
-		"audioPath": The name of your audio file,
-		"jsonPath": The name of the json file for this specific difficulty
-	}
+	{ "difficulty": This is the difficulty to show in game, "difficultyRank": Unimportant difficulty ranking, "audioPath":This is your song .wav/.ogg file, "jsonPath":This is your difficulty .json file }
   ]
 ```
 ___
 
-## Troubleshooting (for the old injector version)
+## Troubleshooting
 BSSI can be finicky at times and stubborn with injecting.
 
 Steps to help you avoid crashing:
